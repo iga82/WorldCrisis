@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style type="text/css">
+html, body {
+margin:0;
+padding:0;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background: url(../images/gradient.jpg) #FFFFFF repeat-x;
+}
+
+#navbar {
+    height:62px;
+    width:1010px;
+    margin-top:0;
+    margin-right:auto;
+    margin-left:auto;
+    background-image:url(../images/navbar.png); 
+}
+
+.logo {
+    height:50px;
+    width:102px;
+    background-image:transparent url(../images/logo.png) center top no-repeat; 
+}
+
+#page {
+    background:#FFFFFF;
+    border-width:thin;
+    border-style:solid;
+    height:1200px;
+    width:1008px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:auto;
+    border-bottom:none;
+}
+
+#items table {
+    table-layout: fixed;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:11px;
+    text-align:left;
+    width: 580px;
+    border-spacing: 0;   
+}
+
+#items td {
+    border-top: 1px solid #999;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #999;
+    padding:10px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#items tr {
+    border-top-style:inset;
+}
+
+#items tr:hover{
+    background-color:#EAF5EB;
+}
+
+#title{
+    border:solid;
+    border-color:#DDD;
+    border-width:thin;      
+    margin-top:33px;;
+    width:90%;
+    height:200px;
+    margin-right:auto;
+    margin-left:auto;
+}
+.titleright{
+    border:none;
+    border-width:thick;
+    width:680px;
+    height:95%;
+    float:right;
+}
+
+#title table {
+    table-layout: fixed;
+    font-family: Verdana, Geneva, sans-serif;;
+    font-size:12px;
+    text-align:left;
+    width: 580px;
+    border-spacing: 0;
+    border-top:none;    
+}
+
+#title td {
+    border-top: 1px none #999;
+    border-top-width: 1px;
+    border-top-style: none;
+    border-top-color: #999;
+    padding:10px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#title th {
+    text-align:center;
+    font-size:12px; 
+}
+
+#mediastrip{
+    border:solid;
+    border-color: #DDD;
+    border-width:thin;      
+    margin-top:40px;
+    width:90%;
+    height:150px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.imagebar{
+    width:49%;
+    height:100%;
+    float:left; /* add this */
+    border-right:solid;
+    border-width:thin;
+    border-color:#DDD;
+    padding-left:8px;
+    padding-top:2px;
+}
+
+.videobar{
+    width:49%;
+    height:100%;
+    float:right;
+    border:none;
+    border-color:#DDD;  
+    border-width:thin;
+    padding-left:5px;
+    padding-top:2px;
+}
+
+#items{
+    border:none;
+    border-width:thin;      
+    margin-top:40px;
+    width:60%;
+    height:700px;
+    margin-right:auto;
+    margin-left:49px;
+    float:left; /* add this */
+}
+
+#related{
+    border:solid;
+    border-color:#DDD;
+    border-width:thin;
+    margin-top:40px;
+    margin-left:725px;
+    width:23%;
+    height:300px;
+    overflow: hidden;
+    font-family: inherit;
+}
+
+#relatedtable{
+    border:none;
+    border-width:thin;
+    width:100%;
+    height:100%;
+    table-layout: fixed;
+}
+
+#related td {
+    border-top: 1px none #999;
+    border-top-width: 1px;
+    border-top-style: none;
+    border-top-color: #999;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#related tr:hover{
+}
+
+#footer {
+    background-color:#CCC;
+    border-width:thin;
+    border-style:solid;
+    border-top:thin;
+    border-bottom:none;
+    border-top-style:dotted;    
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:auto;
+    width:1008px;
+    height:130px;
+}
+
+</style>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>WCDb by That Group</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<div id="navbar"> 
+
+
+ 
+<a href="/" class = "logo"><img style="position:relative; right:-16px; top:6px;" src="../images/logo.png" width="100" height="50"/></a>
+      
+    <a href="/crises" class = "crisesbutton"><img style="position:relative; right:-30px; top:13px;" src="../images/MBcrises.png" width="100px" height="25px"/></a>
+    
+    <a href="/organizations" class = "orgbutton"><img style="position:relative; right:-30px; top:13px;" src="../images/MBorgs.png" width="100px" height="25px"/></a>
+    
+    <a href="/people" class = "pplbutton"><img style="position:relative; right:-30px; top:13px;" src="../images/MBppl.png" width="100px" height="25px"/></a>
+    
+    <a href="/upload" class = "importbutton"><img style="position:relative; right:-30px; top:13px;" src="../images/MBimport.png" width="100px" height="25px"/></a>
+    
+    <a href="/xmlExport" class = "exportbutton"><img style="position:relative; right:-30px; top:13px;" src="../images/MBexport.png" width="100px" height="25px"/></a>
+    
+    <a href="/test" class = "testbutton"><img style="position:relative; right:-30px; top:13px;" src="../images/MBtest.png" width="100px" height="25px"/></a>
+
+
+
+</div>
+
+
+<div id ="page">
+
+
+	<div id = "title">
+    	<img style="position:relative; right:1px; top:-1px;"    {% if primaryimage != None %}
+                                                                    src="{{primaryimage}}"
+                                                                {% else %}
+                                                                    src="/images/noimage.png"
+                                                                {% endif %} width="202" height="202"/>
+	    <div class = "titleright">
+        <center>
+        <table>
+        <tbody>
+       		<tr>
+				<th width="80%"></th>
+                <th width="20%"></th>
+			</tr>       		
+            <tr>
+				<th><font font-family: Verdana, Geneva, sans-serif; size=4>{{name}}</font></th>
+			</tr>
+        </tbody>
+        </table>
+        </br>
+        <table>
+		<tbody>
+				<tr>
+					<td width="30%"><img src="../images/facebookicon.png" width="14" height="14"/><b> Facebook:</b></td>
+                    {% if facebookurl != None %}
+                        <td width="70%"><a href="{{facebookurl}}">{{facebooktitle}}</a></td>
+                    {% else %}
+                        <td width="70%"><a>N/A</a></td>
+                    {% endif %}
+				</tr>
+                <tr>
+                	<td><img src="../images/twittericon.png" width="14" height="14"/><b> Twitter:</b></td>
+                    {% if twitterurl != None %}
+                        <td><a href="{{twitterurl}}">{{twittertitle}}</a></td>
+                    {% else %}
+                        <td><a>N/A</a></td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    <td><img src="../images/siteicon.gif" width="14" height="14"/><b> External Links:</b></td>
+                    {% if exturl != None %}
+                        <td><a href="{{exturl}}">{{exttitle}}</a></td>
+                    {% else %}
+                        <td><a>N/A</a></td>
+                    {% endif %}
+                </tr>
+        </tbody></table></center>
+        </div>
+    </div>
+    
+  <div id="mediastrip">
+  	
+    	<div class="imagebar">
+  			<font face="verdana" style="font-family: Verdana, Geneva, sans-serif;">Images</font>
+    	</div>
+    
+  		<div class="videobar">
+  			<font face="verdana" style="font-family: Verdana, Geneva, sans-serif;">Videos</font>
+    	</div>
+  
+  </div>
+    
+
+    <!--
+    <b>kind :</b>       Child Abuse</br>
+<b>location :</b>       Uganda, South Sudan, Democratic Republic of the Congo, Central African Republic</br>
+<b>date and time :</b>      1987 - 2012</br>
+<b>human impact :</b> 
+    <b>deaths:</b>      1105 (since December 2009)</br>
+    <b>injured:</b>     unknown</br>
+    <b>missing:</b>     2519 (since December 2009)</br>
+    <b>displaced:</b>   2,000,000 (since 1987)</br>
+<b>economic impact :</b> 
+<b>resources needed :</b>   money, health care, military</br>
+<b>ways to help :</b>   https://www.stayclassy.org/checkout/donation?eid=14711</br>
+<b>embedded images </b>  :  http://tinyurl.com/7zc5ows</br>
+<b>embedded videos </b> :</br>
+<b>social networks </b> :</br>
+-->
+    <div id="items">
+   
+    <center></br><table>
+	<tbody>
+				<tr>
+					<td width="30%"><b>Name</b></td>
+                    <td width="70%">{{name}}</td>
+				</tr>
+				
+                <tr>
+                    <td><b>Help</b></td>
+					<td>{{help}}</td>
+				</tr>
+				
+                <tr>
+                	<td><b>Resources</b></td>
+					<td>{{resources}}</td>
+				</tr>
+				
+                <tr>
+                	<td><b>Type</b></td>
+    				<td>{{type}}</td>
+				</tr>
+
+				<tr>
+                	<td><b>Date/Time</b></td>
+					<td>4/1/1987 Approximate/Ongoing</td>
+				</tr>
+			    <tr>
+                    <td><b>Location:</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City</b></td>
+                    <td>{{city}}</td>
+                </tr>               
+                <tr>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Region</b></td>
+                    <td>{{region}}</td>
+                </tr>
+				
+                <tr>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Country</b></td>
+                    <td>{{country}}</td>
+                </tr>
+                <tr>
+                    <td><b>Human Impact:</b></td>
+                    <td></td>
+                </tr>
+
+				<tr>
+                	<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deaths</b></td>
+					<td>{{deaths}}</td>
+				</tr>
+				
+				<tr>
+                	<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Displaced</b></td>
+					<td>{{displaced}}</td>
+				</tr>
+				
+                <tr>
+                	<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Injured</b></td>
+					<td>{{injured}}</td>
+				</tr>
+				
+                <tr>
+                	<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Missing</b></td>
+					<td>{{missing}}</td>
+				</tr>
+				
+				<tr>
+					<td><b>Economic Impact:</b></td>
+                    <td></td>
+				</tr>
+				
+				<tr>
+					<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount</b></td>
+                    <td>{{amount}}</td>
+				</tr>
+				
+                 <tr>
+					<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Currency</b></td>
+                    <td>{{currency}}</td>
+				</tr>
+                 <tr>
+                    <td><b>Related Organization</b></td>
+                    <td><a href="invisible.html">Invisible Children</a></td>
+                </tr>
+                
+                 <tr>
+                    <td><b>Related Person</b></td>
+                    <td><a href="Joseph_Kony.html">Joseph Kony</a></td>
+                </tr>
+				
+	</tbody>
+  	</table></center>
+    </div>
+    
+<div id="related">
+    <table>
+        <tr>
+        	<td>Related Org</td>
+        </tr>
+        <tr>
+        	<td>Related Person</td>
+        </tr>
+
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+<div id="footer">
+</br><font size = "2" face="verdana" style="font-family: Verdana, Geneva, sans-serif;">
+<center><a href="/">Home</a> | <a href="/crises">Crises</a> | <a href="/organizations">Organizations</a> | <a href="/people">People</a> | <a href="/upload">Import</a> | <a href="/xmlExport">Export</a> | <a href="/test">Unit Tests</a></center>
+
+</br></br><center>Yeah, We're "That Group"</center></br>
+<center>Irving Arredondo | Herald Chris Villarreal | Daniel Childs | Nestor D. Almanza | Luis Santos</center></font>
+</div>
+
+</body>
+</html>

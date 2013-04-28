@@ -1,0 +1,319 @@
+<worldCrises>
+        <crisis id="corgicrisis">
+        	<name>Corgi Crisis</name>
+        	<info>
+	        	<history>The Pembroke Welsh Corgi is a herding dog breed, which originated in Pembrokeshire, Wales. It is one of two breeds known as Welsh Corgi: the other is the Cardigan Welsh Corgi. The Pembroke Welsh Corgi is the younger of the two Corgi breeds and is a separate and distinct breed from the Cardigan. The corgi is one of the smallest dogs in the Herding Group. Pembroke Welsh Corgis are famed for being the preferred breed of Queen Elizabeth II, who owns sixteen. These dogs have been favoured by British royalty for more than seventy years.</history>
+	        	<help>Chew Toys</help>
+	        	<resources></resources>
+	        	<type>Cuteness</type>
+	        	<time>
+		        	<time></time>
+		        	<day>0</day>
+		        	<month>0</month>
+		        	<year>0</year>
+		        	<misc>Approximate/Ongoing</misc>
+	        	</time>
+	        	<loc>
+		        	<city>Pembrokeshire</city>
+		        	<region></region>
+		        	<country>Wales</country>
+	        	</loc>
+	        	<impact>
+		        	<human>
+			        	<deaths>0</deaths>
+			        	<displaced>0</displaced>
+			        	<injured>0</injured>
+			        	<missing>0</missing>
+			        	<misc></misc>
+		        	</human>
+		        	<economic>
+			        	<amount>0</amount>
+			        	<currency>Corgi Dollars</currency>
+			        	<misc>Unknown (Figures are estimates)</misc>
+		        	</economic>
+	        	</impact>
+        	</info>
+
+        	<ref>
+	        	<primaryImage>
+		        	<site></site>
+		        	<title></title>
+		        	<url>http://cdn-www.dailypuppy.com/media/dogs/anonymous/Teddy_Welsh_Corgi_01.jpg_w450.jpg</url>
+		        	<description></description>
+	        	</primaryImage>
+	        	<image>
+		        	<site>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</site>
+		        	<title>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</title>
+		        	<url>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</url>
+		        	<description></description>
+
+	        	</image>
+	        	<image>
+		        	<site>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</site>
+		        	<title>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</title>
+		        	<url>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<image>
+		        	<site>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</site>
+		        	<title>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</title>
+		        	<url>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<image>
+		        	<site>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</site>
+		        	<title>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</title>
+		        	<url>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title>idk</title>
+		        	<url>http://youtu.be/wCTN_sDpyP8</url>
+		        	<description>idk</description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title>idk</title>
+		        	<url>http://www.youtube.com/watch?v=JQwirnKysXI</url>
+		        	<description>idk</description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title>idk</title>
+		        	<url>http://www.youtube.com/watch?v=3pSQ170K7sg</url>
+		        	<description>idk</description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title>idk</title>
+		        	<url>http://www.youtube.com/watch?v=irExulXbinY</url>
+		        	<description>idk</description>
+	        	</video>
+	        	<social>
+		        	<site>Facebook</site>
+		        	<title>Corgi Facebook Account</title>
+		        	<url>http://www.facebook.com/pages/Welsh-Corgi/47137748355</url>
+		        	<description>idk</description>
+	        	</social>	        	        		        		        	
+	        	<social>
+		        	<site>Twitter</site>
+		        	<title>Corgi Twitter Account</title>
+		        	<url>https://twitter.com/corgi</url>
+		        	<description>idk</description>
+	        	</social>
+	        	<ext>
+		        	<site>cor.gi</site>
+		        	<title>cor.gi</title>
+		        	<url>http://cor.gi/</url>
+		        	<description>idk</description>
+	        	</ext>
+        	</ref>
+
+        	<misc></misc>
+
+         	<org idref="corgiorg" />
+
+        	<person idref="corgiperson" />
+        </crisis>
+        
+<organization id="corgiorg">
+        	<name>Corgi Organization</name>
+        	<info>
+        		<type>Dog</type>
+	        	<history>The Pembroke Welsh Corgi is a herding dog breed, which originated in Pembrokeshire, Wales. It is one of two breeds known as Welsh Corgi: the other is the Cardigan Welsh Corgi. The Pembroke Welsh Corgi is the younger of the two Corgi breeds and is a separate and distinct breed from the Cardigan. The corgi is one of the smallest dogs in the Herding Group. Pembroke Welsh Corgis are famed for being the preferred breed of Queen Elizabeth II, who owns sixteen. These dogs have been favoured by British royalty for more than seventy years.</history>
+	        	<contact>
+		        	<phone>(555)123-4567</phone>
+		        	<email>corgi@corgis.com</email>
+		        	<mail>
+			        	<address>123 Corgi St.</address>
+			        	<city>Pembrokeshire</city>
+			        	<state></state>
+			        	<country>Wales</country>
+			        	<zip>12345</zip>
+		        	</mail>
+	        	</contact>
+	        	<loc>
+		        	<city>Pembrokeshire</city>
+		        	<region></region>
+		        	<country>Wales</country>
+	        	</loc>
+        	</info>
+
+        	<ref>
+	        	<primaryImage>
+		        	<site></site>
+		        	<title></title>
+		        	<url>http://www.browniebites.net/photos/2011/pembroke-welsh-corgi-wearing-sweater-1.jpg</url>
+		        	<description></description>
+	        	</primaryImage>
+	        	<image>
+		        	<site>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</site>
+		        	<title>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</title>
+		        	<url>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</url>
+		        	<description></description>
+
+	        	</image>
+	        	<image>
+		        	<site>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</site>
+		        	<title>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</title>
+		        	<url>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<image>
+		        	<site>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</site>
+		        	<title>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</title>
+		        	<url>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<image>
+		        	<site>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</site>
+		        	<title>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</title>
+		        	<url>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title></title>
+		        	<url>http://youtu.be/wCTN_sDpyP8</url>
+		        	<description></description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title></title>
+		        	<url>http://www.youtube.com/watch?v=JQwirnKysXI</url>
+		        	<description></description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title></title>
+		        	<url>http://www.youtube.com/watch?v=3pSQ170K7sg</url>
+		        	<description></description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title></title>
+		        	<url>http://www.youtube.com/watch?v=irExulXbinY</url>
+		        	<description></description>
+	        	</video>	        		        		        	
+	        	<social>
+		        	<site>Facebook</site>
+		        	<title>Corgi Facebook Account</title>
+		        	<url>http://www.facebook.com/pages/Welsh-Corgi/47137748355</url>
+		        	<description>idk</description>
+	        	</social>	        	        		        		        	
+	        	<social>
+		        	<site>Twitter</site>
+		        	<title>Corgi Twitter Account</title>
+		        	<url>https://twitter.com/corgi</url>
+		        	<description>idk</description>
+	        	</social>
+	        	<ext>
+		        	<site>cor.gi</site>
+		        	<title>cor.gi</title>
+		        	<url>http://cor.gi/</url>
+		        	<description></description>
+	        	</ext>
+        	</ref>
+
+        	<misc></misc>
+
+        	<crisis idref="corgicrisis" />
+        	<person idref="corgiperson" />
+    	</organization>
+        
+<person id="corgiperson">
+				<name>Sir Corgi</name>
+				<info>
+					<type>Dog</type>
+					<birthdate>
+						<time></time>
+						<day>2</day>
+						<month>1</month>
+						<year>2013</year>
+						<misc></misc>
+					</birthdate>
+					<nationality>British</nationality>
+					<biography>The Pembroke Welsh Corgi is a herding dog breed, which originated in Pembrokeshire, Wales. It is one of two breeds known as Welsh Corgi: the other is the Cardigan Welsh Corgi. The Pembroke Welsh Corgi is the younger of the two Corgi breeds and is a separate and distinct breed from the Cardigan. The corgi is one of the smallest dogs in the Herding Group. Pembroke Welsh Corgis are famed for being the preferred breed of Queen Elizabeth II, who owns sixteen. These dogs have been favoured by British royalty for more than seventy years.</biography>
+				</info>
+				<ref>
+					<primaryImage>
+		        	<site></site>
+		        	<title></title>
+		        	<url>http://img0.etsystatic.com/000/0/5328069/il_fullxfull.234945376.jpg</url>
+		        	<description></description>
+	        	</primaryImage>
+	        	<image>
+		        	<site>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</site>
+		        	<title>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</title>
+		        	<url>http://upload.wikimedia.org/wikipedia/commons/b/bf/Pembroke_Welsh_Corgi_600.jpg</url>
+		        	<description></description>
+
+	        	</image>
+	        	<image>
+		        	<site>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</site>
+		        	<title>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</title>
+		        	<url>http://images4.fanpop.com/image/photos/17900000/Corgi-puppies-D-dogs-17924323-450-369.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<image>
+		        	<site>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</site>
+		        	<title>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</title>
+		        	<url>http://www.dogfamily.org/images/pembroke-welsh-corgi-8.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<image>
+		        	<site>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</site>
+		        	<title>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</title>
+		        	<url>http://ihasahotdog.files.wordpress.com/2008/02/loldogs-cute-puppy-pictures-corgibattery.jpg</url>
+		        	<description></description>		        	
+	        	</image>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title></title>
+		        	<url>http://youtu.be/wCTN_sDpyP8</url>
+		        	<description></description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title></title>
+		        	<url>http://www.youtube.com/watch?v=JQwirnKysXI</url>
+		        	<description></description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title></title>
+		        	<url>http://www.youtube.com/watch?v=3pSQ170K7sg</url>
+		        	<description></description>
+	        	</video>
+	        	<video>
+		        	<site>YouTube</site>
+		        	<title></title>
+		        	<url>http://www.youtube.com/watch?v=irExulXbinY</url>
+		        	<description></description>
+	        	</video>	        		        		        	
+	        	<social>
+		        	<site>Facebook</site>
+		        	<title>Corgi Facebook Account</title>
+		        	<url>http://www.facebook.com/pages/Welsh-Corgi/47137748355</url>
+		        	<description>idk</description>
+	        	</social>	        	        		        		        	
+	        	<social>
+		        	<site>Twitter</site>
+		        	<title>Corgi Twitter Account</title>
+		        	<url>https://twitter.com/corgi</url>
+		        	<description>idk</description>
+	        	</social>
+	        	<ext>
+		        	<site>cor.gi</site>
+		        	<title>cor.gi</title>
+		        	<url>http://cor.gi/</url>
+		        	<description></description>
+	        	</ext>
+				</ref>
+				<misc></misc>
+				<crisis idref="corgicrisis"/>
+				<org idref="corgiorg"/>
+        </person>
+
+</worldCrises>

@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style type="text/css">
+html, body {
+margin:0;
+padding:0;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background: url(../images/gradient.jpg) #FFFFFF repeat-x;
+}
+a:link, a:visited, a:active, a:hover {
+    color: #3F5995;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#navbar {
+    height:62px;
+    width:1010px;
+    margin-top:0;
+    margin-right:auto;
+    margin-left:auto;
+    background-image:url(../images/navbar.png); 
+
+    border-color:#DDD;
+    -webkit-box-shadow: 3px 3px 6px #888, -3px 3px 6px #888;  
+}
+
+#navbar form {
+    position: relative;
+    padding-top: 5px;
+    margin-left: 132px;
+}
+.searchbar
+{
+    border: solid;
+    border-style: thick;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    -moz-bottom-left-radius: 3px;    
+    border-color: #DDD;
+    padding-top: 0px;
+    height: 15px;
+    background: #FFF;
+    color: #000;
+    font-size: 12px;
+
+}
+.searchbutton{
+    position: absolute;
+
+}
+.logo {
+    height:50px;
+    width:102px;
+    background-image:transparent url(../images/logo.png) center top no-repeat; 
+}
+
+#page {
+    background:#FFFFFF;
+    border-width:thin;
+    border-style:solid;
+    /*height:1400px;*/
+    overflow: hidden;
+    width:1008px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:auto;
+    border-bottom:none;
+
+    border-color:#DDD;
+    -webkit-box-shadow: 3px 3px 6px #888, -3px 3px 6px #888;   
+}
+
+#items table {
+    table-layout: fixed;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:12px;
+    text-align:left;
+    width: 580px;
+    border-spacing: 0;   
+}
+
+#items td {
+    border-top: 1px solid #999;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #999;
+    padding:10px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#items tr {
+    border-top-style:inset;
+}
+
+#items tr:hover{
+    background-color:#EAF5EB;
+}
+
+#title{
+    border:solid;
+    border-color:#DDD;
+    border-width:thin;      
+    margin-top:33px;;
+    width:90%;
+    height:200px;
+    margin-right:auto;
+    margin-left:auto;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;  
+    -moz-border-top-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px; 
+}
+.titleright{
+    border:none;
+    border-width:thick;
+    width:680px;
+    height:95%;
+    float:right;
+}
+
+#title table {
+    table-layout: fixed;
+    font-family: Verdana, Geneva, sans-serif;;
+    font-size:12px;
+    text-align:left;
+    width: 580px;
+    border-spacing: 0;
+    border-top:none;    
+}
+
+#title td {
+    border-top: 1px none #999;
+    border-top-width: 1px;
+    border-top-style: none;
+    border-top-color: #999;
+    padding:10px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#title th {
+    text-align:center;
+    font-size:12px; 
+}
+
+.pimage {
+  max-width: 202px;
+  max-height: 202px;
+  height: expression(this.height > 202 ? "202px" : true);
+  width: expression(this.width > 202 ? "202px" : true);
+
+}
+
+#mediastrip{
+    border:solid;
+    border-color: #DDD;
+    border-width:thin;      
+    margin-top:40px;
+    width:90%;
+    height:150px;
+    margin-right:auto;
+    margin-left:auto;
+
+    border-radius: 10px;
+    -moz-border-radius:10px;
+}
+
+.imagebar{
+    width:49%;
+    height:100%;
+    float:left; /* add this */
+    border-right:none;
+    border-width:thin;
+    border-color:#DDD;
+    padding-left:8px;
+    padding-top:2px;
+}
+
+.videobar{
+    width:49%;
+    height:100%;
+    float:right;
+    border:none;
+    border-color:#DDD;  
+    border-width:thin;
+    padding-left:5px;
+    padding-top:2px;
+}
+
+.photostrip{
+    border-style: none;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.videostrip{
+    border-style: none;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#items{
+    border:none;
+    border-width:thin;      
+    margin-top:40px;
+    width:60%;
+    height:700px;
+    margin-right:auto;
+    margin-left:49px;
+    float:left; /* add this */
+}
+
+#related{
+    padding-top: 8px;
+    border:solid;
+    border-color:#DDD;
+    border-width:thin;
+    margin-top:40px;
+    margin-left:735px;
+    width:22%;
+    height:265px;
+    overflow: hidden;
+    font-family: Verdana;
+
+    border-radius:10px;
+    -moz-border-radius:10px;
+}
+
+.relateditems{
+    border-style: none;
+    margin-top: 10px;
+    margin-left: 8px;
+    height:105px;
+    position: relative;
+    width: 95%;
+    font-size: 13px;
+
+}
+
+#footer {
+    background-color:#E3E2E4;
+    border-width:thin;
+    border-style:solid;
+    border-top:thin;
+    border-bottom:none;
+    border-top-style:dotted;    
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:auto;
+    width:1008px;
+    height:130px;
+
+    border-top-color:#808080;
+    border-right-color:#DDD;
+    border-left-color:#DDD;
+    -webkit-box-shadow: 3px 2px 6px #888, -3px 2px 6px #888; 
+}
+
+</style>
+
+<script type="text/javascript" src="http://gettopup.com/releases/latest/top_up-min.js"></script>
+<script type="text/javascript" src="/top_up-min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Organization: {{name}}</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<div id="navbar"> 
+
+    <!-- search bar-->
+   <form id="search" method="get" action="/searchQuery">        
+            <input type="string" class = "searchbar" name="searchKeyword" size="60" maxlength="50" placeholder="Find Crises, Organizations, People and more...">
+            <input type="image" class = "searchbutton" src="../images/searchbutton.png" value="Search" height="22" width="22">
+    </form>
+
+    <!-- logo and menu bar -->
+    <a href="/" class = "logo"><img style="position:relative; right:-16px; top:-20px;" src="../images/logo.png" width="100" height="50"/></a>
+      
+    <a href="/crises" class = "crisesbutton"><img style="position:relative; right:-30px; top: -15px;" src="../images/MBcrises.png" width="100px" height="25px"/></a>
+    
+    <a href="/organizations" class = "orgbutton"><img style="position:relative; right:-28px; top:-15px;" src="../images/MBorgs.png" width="100px" height="25px"/></a>
+    
+    <a href="/people" class = "pplbutton"><img style="position:relative; right:-26px; top:-15px;" src="../images/MBppl.png" width="100px" height="25px"/></a>
+    
+    <a href="/upload" class = "importbutton"><img style="position:relative; right:-24px; top:-15px;" src="../images/MBimport.png" width="100px" height="25px"/></a>
+    
+    <a href="/xmlExport" target = "_blank" class = "exportbutton"><img style="position:relative; right:-22px; top:-15px;" src="../images/MBexport.png" width="100px" height="25px"/></a>
+    
+    <a href="/test" target = "_blank" class = "testbutton"><img style="position:relative; right:-20px; top:-15px;" src="../images/MBtest.png" width="100px" height="25px"/></a>
+
+</div>
+
+
+<div id ="page">
+
+
+	<div id = "title">
+        {% if primaryimage != None %}
+        <a href="{{primaryimage}}" class="top_up" toptions="shaded = 1">
+        {% endif %}
+        <img style="position:relative; right:1px; top:-1px;"    
+                {% if primaryimage != None %}
+                    src="{{primaryimage}}"
+                {% else %}
+                    src="/images/noimage.png"
+                {% endif %} width="202" height="202"/></a>
+	    <div class = "titleright">
+        <center>
+        <table>
+        <tbody>
+       		<tr>
+				<th width="80%"></th>
+                <th width="20%"></th>
+			</tr>       		
+            <tr>
+				<th><font font-family: Verdana, Geneva, sans-serif; size=4>{{name}}</font></th>
+			</tr>
+        </tbody>
+        </table>
+        </br>
+        <table>
+		<tbody>
+				<tr>
+                    <td width="30%"><img src="../images/facebookicon.png" width="14" height="14"/><b> Facebook:</b></td>
+                    {% if facebookurl != None %}
+                        <td width="70%"><a href="{{facebookurl}}">{% if facebooktitle != None %}
+                        {{facebooktitle}}</a></td>
+                    {% else %}
+                        {{name}} Facebook</a></td>
+                    {% endif %}
+                    {% else %}
+                        <td width="70%"><a>N/A</a></td>
+                    {% endif %}
+
+                    
+                </tr>
+                <tr>
+                    <td><img src="../images/twittericon.png" width="14" height="14"/><b> Twitter:</b></td>
+                    {% if twitterurl != None %}
+                        <td><a href="{{twitterurl}}">{% if twittertitle != None %}
+                        {{twittertitle}}</a></td>
+                    {% else %}
+                        {{name}} Twitter</a></td>
+                    {% endif %}
+                    {% else %}
+                        <td><a>N/A</a></td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    <td><img src="../images/siteicon.gif" width="14" height="14"/><b> External Links:</b></td>
+                    {% if exturl != None %}
+                        <td><a href="{{exturl}}">{{exttitle}}</a></td>
+                    {% else %}
+                        <td><a>N/A</a></td>
+                    {% endif %}
+                </tr>
+        </tbody></table></center>
+        </div>
+    </div>
+    
+<div id="mediastrip">
+         <div class="imagebar">
+            <b><font face="verdana" style="font-family: Verdana, Geneva, sans-serif;" color="#AC8B13">Photos</font></b>
+            <div class="photostrip">
+                <div id="photos">
+
+                    {% for p in pics %}
+                        <a href="{{p}}"><img height="102" width="102" src="{{p}}"/></a>                
+                    {% endfor %}             
+                </div>               
+            </div>
+        </div>
+    
+        <div class="videobar">
+            <b><font face="verdana" style="font-family: Verdana, Geneva, sans-serif;" color="#AC8B13">Videos</font></b>
+            <div class="videostrip">
+                    {% for v in videos %}
+                        <a href="http://www.youtube.com/v/{{v}}&hl=nl&fs=1&rel=0&hd=1&autoplay=1" toptions="shaded = 1, width = 853, height = 505, type = flash"><img height="102" width = "102" src="http://img.youtube.com/vi/{{v}}/0.jpg"></a>
+                    {% endfor %}                             
+            </div>
+        </div>
+  
+  </div>
+    <div id="items">
+   
+
+    <center></br><table>
+	<tbody>
+				<tr>
+					<td width="30%"><b>Name</b></td>
+                    <td width="70%">{{name}}</td>
+				</tr>
+				
+                <tr>
+                    <td><b>History</b></td>
+					<td>{{history}}</td>
+				</tr>
+				
+                <tr>
+                	<td><b>Type</b></td>
+    				<td>{{type}}</td>
+				</tr>
+
+			    <tr>
+                    <td><b>Location:</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City</b></td>
+                    <td>{{city}}</td>
+                </tr> 
+
+                {% if region != None %}
+                    <tr>
+                        <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Region</b></td>
+                        <td>{{region}}</td>
+                    </tr>                    
+                {% endif %}              
+
+				
+                <tr>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Country</b></td>
+                    <td>{{country}}</td>
+                </tr>
+
+                <tr>
+                    <td><b>Contact:</b></td>
+                    <td></td>
+                </tr>
+
+				<tr>
+                	<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone</b></td>
+					<td>{{phone}}</td>
+				</tr>
+				
+				<tr>
+                	<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</b></td>
+					<td>{{email}}</td>
+				</tr>
+				
+                <tr>
+                	<td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail</b></td>
+					<td>{{add}}</br>{{addcity}}, {{addstate}} {{addzip}}</br>{{addcountry}}</td>
+				</tr>
+
+				
+	</tbody>
+  	</table></center>
+    </div>
+    
+    <div id="related">
+            <b><font face="verdana" color="#AC8B13">&nbsp;&nbsp;Related List</font><b>
+            <div class="relateditems">
+                <a href="{{rcurl}}"><img height="102" width="102" hspace="1" 
+                {% if rcpic != None %}
+                    src="{{rcpic}}"
+                {% else %}
+                    src="/images/noimage.png"
+                {% endif %}
+                align="left"/><center>{{rcname}}</center></a> 
+            </div>
+
+            <div class="relateditems">
+                <a href="{{rpurl}}"><img height="102" width="102"
+                {% if rppic != None %}
+                    src="{{rppic}}"
+                {% else %}
+                    src="/images/noimage.png"
+                {% endif %}
+                align="left"/><center>{{rpname}}</center></a> 
+            </div>    
+    </div>
+</div>
+
+
+
+
+
+
+<div id="footer">
+</br><font size = "2" face="verdana" style="font-family: Verdana, Geneva, sans-serif;">
+<center><a href="/">Home</a> | <a href="/crises">Crises</a> | <a href="/organizations">Organizations</a> | <a href="/people">People</a> | <a href="/upload">Import</a> | <a href="/xmlExport" target = "_blank">Export</a> | <a href="/test" target = "_blank">Unit Tests</a></center>
+
+</br></br><center>Yeah, We're <a href="http://i.imgur.com/z0UKd.png">"That Group"</a></center></br>
+<center>Irving Arredondo | Herald Chris Villarreal | Daniel Childs | Nestor D. Almanza | Luis Santos</center></font>
+</div>
+
+
+<script type="text/javascript">
+  TopUp.addPresets({
+    "#photos a": {
+      title: "{current} of {total}",
+      group: "examples",
+      readAltText: 1,
+      shaded: 1
+    }
+  });
+</script>
+
+
+</body>
+</html>

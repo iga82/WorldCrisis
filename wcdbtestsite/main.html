@@ -1,0 +1,1452 @@
+wrote main.html
+PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/cygdrive/c/CS373/cs373-wc/chrisv-cs373-wc/main.py">/cygdrive/c/CS373/cs373-wc/chrisv-cs373-wc/main.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="xml.etree.ElementTree.html">xml.etree.ElementTree</a><br>
+<a href="xml.etree.ElementTree.html">xml.etree.ElementTree</a><br>
+<a href="google.appengine.ext.db.html">google.appengine.ext.db</a><br>
+<a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top><a href="xml.dom.minidom.html">xml.dom.minidom</a><br>
+<a href="os.html">os</a><br>
+<a href="minixsv.pyxsval.html">minixsv.pyxsval</a><br>
+<a href="google.appengine.api.search.html">google.appengine.api.search</a><br>
+</td><td width="25%" valign=top><a href="string.html">string</a><br>
+<a href="sys.html">sys</a><br>
+<a href="google.appengine.ext.webapp.template.html">google.appengine.ext.webapp.template</a><br>
+<a href="urllib.html">urllib</a><br>
+</td><td width="25%" valign=top><a href="google.appengine.api.users.html">google.appengine.api.users</a><br>
+<a href="google.appengine.ext.webapp.html">google.appengine.ext.webapp</a><br>
+<a href="webapp2.html">webapp2</a><br>
+<a href="wsgiref.html">wsgiref</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>(<a href="__builtin__.html#object">__builtin__.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#Export">Export</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#MyHandler">MyHandler</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#Search">Search</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#Upload">Upload</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#criseslist">criseslist</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#dynamic_crisis">dynamic_crisis</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#dynamic_org">dynamic_org</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#dynamic_ppl">dynamic_ppl</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#gaeunit">gaeunit</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#organizationslist">organizationslist</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#peoplelist">peoplelist</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#uploadpage">uploadpage</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Export">class <strong>Export</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Export">Export</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Export-get"><strong>get</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="Export-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#Export-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="Export-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="Export-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#Export-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="Export-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="Export-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="Export-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="Export-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="Export-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="Export-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="Export-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MyHandler">class <strong>MyHandler</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#MyHandler">MyHandler</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MyHandler-get"><strong>get</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="MyHandler-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#MyHandler-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#MyHandler-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="MyHandler-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Search">class <strong>Search</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>handles&nbsp;search&nbsp;requests<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Search">Search</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Search-get"><strong>get</strong></a>(self)</dt><dd><tt>handles&nbsp;a&nbsp;get&nbsp;request&nbsp;with&nbsp;a&nbsp;query.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="Search-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#Search-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="Search-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="Search-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#Search-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="Search-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="Search-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="Search-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="Search-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="Search-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="Search-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="Search-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Upload">class <strong>Upload</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Upload">Upload</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Upload-post"><strong>post</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="Upload-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#Upload-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="Upload-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="Upload-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``get()``,&nbsp;``<a href="#Upload-post">post</a>()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="Upload-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="Upload-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="Upload-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="Upload-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="Upload-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="Upload-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="Upload-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="criseslist">class <strong>criseslist</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#criseslist">criseslist</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="criseslist-get"><strong>get</strong></a>(self)</dt><dd><tt>#&nbsp;global&nbsp;xmlVar</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="criseslist-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#criseslist-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="criseslist-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="criseslist-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#criseslist-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="criseslist-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="criseslist-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="criseslist-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="criseslist-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="criseslist-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="criseslist-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="criseslist-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="dynamic_crisis">class <strong>dynamic_crisis</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#dynamic_crisis">dynamic_crisis</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="dynamic_crisis-get"><strong>get</strong></a>(self, pageid)</dt><dd><tt>#&nbsp;global&nbsp;xmlVar</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="dynamic_crisis-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#dynamic_crisis-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#dynamic_crisis-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_crisis-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="dynamic_org">class <strong>dynamic_org</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#dynamic_org">dynamic_org</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="dynamic_org-get"><strong>get</strong></a>(self, pageid)</dt><dd><tt>#&nbsp;global&nbsp;xmlVar</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="dynamic_org-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#dynamic_org-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#dynamic_org-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_org-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="dynamic_ppl">class <strong>dynamic_ppl</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#dynamic_ppl">dynamic_ppl</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="dynamic_ppl-get"><strong>get</strong></a>(self, pageid)</dt><dd><tt>#&nbsp;global&nbsp;xmlVar</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="dynamic_ppl-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#dynamic_ppl-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#dynamic_ppl-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="dynamic_ppl-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="gaeunit">class <strong>gaeunit</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#gaeunit">gaeunit</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="gaeunit-get"><strong>get</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="gaeunit-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#gaeunit-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#gaeunit-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="gaeunit-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="organizationslist">class <strong>organizationslist</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#organizationslist">organizationslist</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="organizationslist-get"><strong>get</strong></a>(self)</dt><dd><tt>#&nbsp;global&nbsp;xmlVar</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="organizationslist-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#organizationslist-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#organizationslist-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="organizationslist-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="peoplelist">class <strong>peoplelist</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#peoplelist">peoplelist</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="peoplelist-get"><strong>get</strong></a>(self)</dt><dd><tt>#&nbsp;global&nbsp;xmlVar</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="peoplelist-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#peoplelist-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#peoplelist-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="peoplelist-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="uploadpage">class <strong>uploadpage</strong></a>(<a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#uploadpage">uploadpage</a></dd>
+<dd><a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="uploadpage-get"><strong>get</strong></a>(self)</dt><dd><tt>#&nbsp;global&nbsp;xmlVar</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><a name="uploadpage-__init__"><strong>__init__</strong></a>(self, request<font color="#909090">=None</font>, response<font color="#909090">=None</font>)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+When&nbsp;instantiated&nbsp;by&nbsp;``webapp.WSGIApplication``,&nbsp;request&nbsp;and&nbsp;response<br>
+are&nbsp;not&nbsp;set&nbsp;on&nbsp;instantiation.&nbsp;Instead,&nbsp;<a href="#uploadpage-initialize">initialize</a>()&nbsp;is&nbsp;called&nbsp;right<br>
+after&nbsp;the&nbsp;handler&nbsp;is&nbsp;created&nbsp;to&nbsp;set&nbsp;them.<br>
+&nbsp;<br>
+Also&nbsp;in&nbsp;webapp&nbsp;dispatching&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;WSGI&nbsp;app,&nbsp;while&nbsp;webapp2<br>
+does&nbsp;it&nbsp;here&nbsp;to&nbsp;allow&nbsp;more&nbsp;flexibility&nbsp;in&nbsp;extended&nbsp;classes:&nbsp;handlers<br>
+can&nbsp;wrap&nbsp;:meth:`dispatch`&nbsp;to&nbsp;check&nbsp;for&nbsp;conditions&nbsp;before&nbsp;executing&nbsp;the<br>
+requested&nbsp;method&nbsp;and/or&nbsp;post-process&nbsp;the&nbsp;response.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;Parameters&nbsp;are&nbsp;optional&nbsp;only&nbsp;to&nbsp;support&nbsp;webapp's&nbsp;constructor&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;doesn't&nbsp;take&nbsp;any&nbsp;arguments.&nbsp;Consider&nbsp;them&nbsp;as&nbsp;required.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-abort"><strong>abort</strong></a>(self, code, *args, **kwargs)</dt><dd><tt>Raises&nbsp;an&nbsp;:class:`HTTPException`.<br>
+&nbsp;<br>
+This&nbsp;stops&nbsp;code&nbsp;execution,&nbsp;leaving&nbsp;the&nbsp;HTTP&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled<br>
+by&nbsp;an&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;(e.g.,&nbsp;404).<br>
+:param&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Positional&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.<br>
+:param&nbsp;kwargs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;exception&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-dispatch"><strong>dispatch</strong></a>(self)</dt><dd><tt>Dispatches&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;first&nbsp;check&nbsp;if&nbsp;there's&nbsp;a&nbsp;handler_method&nbsp;defined&nbsp;in&nbsp;the<br>
+matched&nbsp;route,&nbsp;and&nbsp;if&nbsp;not&nbsp;it'll&nbsp;use&nbsp;the&nbsp;method&nbsp;correspondent&nbsp;to&nbsp;the<br>
+request&nbsp;method&nbsp;(``<a href="#uploadpage-get">get</a>()``,&nbsp;``post()``&nbsp;etc).</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-error"><strong>error</strong></a>(self, code)</dt><dd><tt>Clears&nbsp;the&nbsp;response&nbsp;and&nbsp;sets&nbsp;the&nbsp;given&nbsp;HTTP&nbsp;status&nbsp;code.<br>
+&nbsp;<br>
+This&nbsp;doesn't&nbsp;stop&nbsp;code&nbsp;execution;&nbsp;for&nbsp;this,&nbsp;use&nbsp;:meth:`abort`.<br>
+&nbsp;<br>
+:param&nbsp;code:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP&nbsp;status&nbsp;error&nbsp;code&nbsp;(e.g.,&nbsp;501).</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-handle_exception"><strong>handle_exception</strong></a>(self, exception, debug)</dt><dd><tt>Called&nbsp;if&nbsp;this&nbsp;handler&nbsp;throws&nbsp;an&nbsp;exception&nbsp;during&nbsp;execution.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;re-raise&nbsp;the&nbsp;exception&nbsp;to&nbsp;be&nbsp;handled&nbsp;by<br>
+:meth:`WSGIApplication.handle_exception`.<br>
+&nbsp;<br>
+:param&nbsp;exception:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exception&nbsp;that&nbsp;was&nbsp;thrown.<br>
+:param&nbsp;debug_mode:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;web&nbsp;application&nbsp;is&nbsp;running&nbsp;in&nbsp;debug&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-initialize"><strong>initialize</strong></a>(self, request, response)</dt><dd><tt>Initializes&nbsp;this&nbsp;request&nbsp;handler&nbsp;with&nbsp;the&nbsp;given&nbsp;WSGI&nbsp;application,<br>
+Request&nbsp;and&nbsp;Response.<br>
+&nbsp;<br>
+:param&nbsp;request:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Request`&nbsp;instance.<br>
+:param&nbsp;response:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:class:`Response`&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-redirect"><strong>redirect</strong></a>(self, uri, permanent<font color="#909090">=False</font>, abort<font color="#909090">=False</font>, code<font color="#909090">=None</font>, body<font color="#909090">=None</font>)</dt><dd><tt>Issues&nbsp;an&nbsp;HTTP&nbsp;redirect&nbsp;to&nbsp;the&nbsp;given&nbsp;relative&nbsp;URI.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`.</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-redirect_to"><strong>redirect_to</strong></a>(self, _name, _permanent<font color="#909090">=False</font>, _abort<font color="#909090">=False</font>, _code<font color="#909090">=None</font>, _body<font color="#909090">=None</font>, *args, **kwargs)</dt><dd><tt>Convenience&nbsp;method&nbsp;mixing&nbsp;:meth:`redirect`&nbsp;and&nbsp;:meth:`uri_for`.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;are&nbsp;described&nbsp;in&nbsp;:func:`redirect`&nbsp;and&nbsp;:func:`uri_for`.</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-uri_for"><strong>uri_for</strong></a>(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<dl><dt><a name="uploadpage-url_for"><strong>url_for</strong></a> = uri_for(self, _name, *args, **kwargs)</dt><dd><tt>Returns&nbsp;a&nbsp;URI&nbsp;for&nbsp;a&nbsp;named&nbsp;:class:`Route`.<br>
+&nbsp;<br>
+..&nbsp;seealso::&nbsp;:meth:`Router.build`.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="webapp2.html#RequestHandler">webapp2.RequestHandler</a>:<br>
+<dl><dt><strong>app</strong> = None</dl>
+
+<dl><dt><strong>request</strong> = None</dl>
+
+<dl><dt><strong>response</strong> = None</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-ValidateSchema"><strong>ValidateSchema</strong></a>(xmlData, schema)</dt><dd><tt>#&nbsp;Uses&nbsp;minixsv&nbsp;library&nbsp;to&nbsp;validate&nbsp;schema</tt></dd></dl>
+ <dl><dt><a name="-prettify"><strong>prettify</strong></a>(elem)</dt><dd><tt>Return&nbsp;a&nbsp;pretty-printed&nbsp;XML&nbsp;string&nbsp;for&nbsp;the&nbsp;Element.</tt></dd></dl>
+ <dl><dt><a name="-printXML"><strong>printXML</strong></a>(xml)</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__warningregistry__</strong> = {("Not importing directory '/cygdrive/c/google_appengine/lib/webapp2': missing __init__.py", &lt;type 'exceptions.ImportWarning'&gt;, 5): True}<br>
+<strong>app</strong> = &lt;webapp2.WSGIApplication object&gt;<br>
+<strong>xmlVar</strong> = ''</td></tr></table>
+</body></html>

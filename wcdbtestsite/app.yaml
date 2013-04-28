@@ -1,0 +1,63 @@
+application: wcdbtestsite
+version: 1
+api_version: 1
+runtime: python27
+threadsafe: true
+
+libraries:
+- name: django
+  version: "1.2"
+
+handlers:
+- url: /
+  script: main.app
+
+- url: /wc    
+  static_dir: wc
+
+- url: /xmlUpload
+  script: main.app
+
+- url: /searchQuery
+  script: main.app
+
+- url: /xmlExport
+  script: main.app
+
+- url: /test.*
+  script: gaeunit.app
+
+- url: /images    
+  static_dir: images
+
+- url: /crisis/(.*)
+  script: main.app
+
+- url: /organization/(.*)
+  script: main.app
+
+- url: /person/(.*)
+  script: main.app
+
+- url: /crises
+  script: main.app
+
+- url: /people
+  script: main.app
+
+- url: /organizations
+  script: main.app
+
+- url: /upload
+  script: main.app
+
+- url: /nivo-slider
+  static_dir: nivo-slider
+
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /presentation
+  static_files: ThatGroupPowerPoint.pptx
+  upload: ThatGroupPowerPoint.pptx

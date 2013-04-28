@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style type="text/css">
+html, body {
+margin:0;
+padding:0;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: url(images/gradient.jpg) #FFFFFF repeat-x;
+}
+a:link, a:visited, a:active, a:hover {
+    color: #3F5995;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#navbar {
+	height:62px;
+	width:1010px;
+	margin-top:0;
+	margin-right:auto;
+	margin-left:auto;
+	background-image:url(images/navbar.png); 
+
+    border-color:#DDD;
+    -webkit-box-shadow: 3px 3px 6px #888, -3px 3px 6px #888;  
+}
+
+#navbar form {
+	position: relative;
+	padding-top: 5px;
+	margin-left: 132px;
+}
+.searchbar
+{
+	border: solid;
+	border-style: thick;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-color: #DDD;
+	padding-top: 0px;
+	height: 15px;
+	background: #FFF;
+	color: #000;
+	font-size: 12px;
+
+}
+.searchbutton{
+	position: absolute;
+
+}
+.logo {
+	height:50px;
+	width:102px;
+	background-image:transparent url(images/logo.png) center top no-repeat; 
+}
+
+
+
+
+#listpage {
+	background:#FFFFFF;
+	border-width:thin;
+	border-style:solid;
+	height:500px;
+	width:1008px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:auto;
+	border-bottom:none;
+	font-family: inherit;
+
+    border-color:#DDD;
+    -webkit-box-shadow: 3px 3px 6px #888, -3px 3px 6px #888;   
+}
+
+
+#listpage table {
+	padding-top:10px;
+	table-layout: fixed;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:11px;
+	text-align:center;
+	width: 80%;
+	cellpadding="0";
+	cellspacing="0";
+}
+
+#listpage td {
+	border-top: 1px solid #999;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+	padding:10px;
+	font-family: Verdana, Geneva, sans-serif;
+	word-wrap:break-word;
+}
+
+#listpage tr {
+	border-top-style:inset;
+}
+
+#listpage tr:nth-child(odd) {
+	background-color:#CCC;
+}
+
+
+#listpage tr:hover{
+	font-weight:bold;
+}
+
+
+#page {
+	background:#FFFFFF;
+	border-width:thin;
+	border-style:solid;
+	height:1200px;
+	width:1008px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:auto;
+	border-bottom:none;
+
+    border-color:#DDD;
+    -webkit-box-shadow: 3px 0px 6px #888, -3px 0 6px #888; 
+
+}
+
+
+#footer {
+	background-color:#E3E2E4;
+	border-width:thin;
+	border-style:solid;
+	border-top:thin;
+	border-bottom:none;
+	border-top-style:dotted;	
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:auto;
+	width:1008px;
+	height:130px;
+
+	border-top-color:#808080;
+    border-right-color:#DDD;
+    border-left-color:#DDD;
+    -webkit-box-shadow: 3px 2px 6px #888, -3px 2px 6px #888; 
+}
+
+</style>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>WCDb Import</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<div id="navbar"> 
+
+	<!-- search bar-->
+   <form id="search" method="get" action="/searchQuery">		
+			<input type="string" class = "searchbar" name="searchKeyword" size="60" maxlength="50" placeholder="Find Crises, Organizations, People and more...">
+			<input type="image" class = "searchbutton" src="images/searchbutton.png" value="Search" height="22" width="22">
+	</form>
+<!-- 	<form>
+			<input type="text" name="searchKeyword" class="searchbar" placeholder = "yolo" style="font-size: 15px; word-spacing: 0; letter-spacing: 0; vertical-align: 0; font-family: Verdana; font-weight: bold; border-style: solid; border-width: 1; margin: 0; padding: 0" size="40" maxlength="50"/>
+			<input type="image" src="images/searchbutton.png" value="Search">
+	</form> -->
+
+	<!-- logo and menu bar -->
+	<a href="/" class = "logo"><img style="position:relative; right:-16px; top:-20px;" src="images/logo.png" width="100" height="50"/></a>
+      
+    <a href="/crises" class = "crisesbutton"><img style="position:relative; right:-30px; top: -15px;" src="images/MBcrises.png" width="100px" height="25px"/></a>
+    
+    <a href="/organizations" class = "orgbutton"><img style="position:relative; right:-28px; top:-15px;" src="images/MBorgs.png" width="100px" height="25px"/></a>
+    
+    <a href="/people" class = "pplbutton"><img style="position:relative; right:-26px; top:-15px;" src="images/MBppl.png" width="100px" height="25px"/></a>
+    
+    <a href="/upload" class = "importbutton"><img style="position:relative; right:-24px; top:-15px;" src="images/MBimport.png" width="100px" height="25px"/></a>
+    
+    <a href="/xmlExport" target = "_blank" class = "exportbutton"><img style="position:relative; right:-22px; top:-15px;" src="images/MBexport.png" width="100px" height="25px"/></a>
+    
+    <a href="/test" target = "_blank" class = "testbutton"><img style="position:relative; right:-20px; top:-15px;" src="images/MBtest.png" width="100px" height="25px"/></a>
+
+</div>
+
+<div id ="listpage">
+<center><h2><font face="verdana" style="font-family: Verdana, Geneva, sans-serif;">Import</font></h2></center>
+
+<!--	Table that holds list of crises, organizations, or people-->
+</br>
+<center>
+
+
+<form action="/xmlUpload" target = "_blank" redirect = "/" enctype="multipart/form-data" method="post">
+            <div><label></label></div>
+            <div><input type="file" name="xml"/></div>
+            <div><input type="submit" value="submit" /></div>
+          </form>
+		
+		</form>
+        
+        
+</center>
+</div>
+
+<div id="footer">
+</br><font size = "2" face="verdana" style="font-family: Verdana, Geneva, sans-serif;">
+<center><a href="/">Home</a> | <a href="/crises">Crises</a> | <a href="/organizations">Organizations</a> | <a href="/people">People</a> | <a href="/upload">Import</a> | <a href="/xmlExport" target = "_blank">Export</a> | <a href="/test" target = "_blank">Unit Tests</a></center>
+
+</br></br><center>Yeah, We're <a href="http://i.imgur.com/z0UKd.png">"That Group"</a></center></br>
+<center>Irving Arredondo | Herald Chris Villarreal | Daniel Childs | Nestor D. Almanza | Luis Santos</center></font>
+</div>
+
+</body>
+</html>
